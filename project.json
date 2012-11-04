@@ -1,0 +1,40 @@
+/*
+BOWER ( package? / Bower meta )
+CSS ( processor / IN / OUT )
+JS ( processor / IN / OUT )
+HTML ( processor / IN / OUT )
+SERVER ( serve directory / port )
+*/
+{
+	"bower" : {
+		"package" : true,
+		"version" : "0.1",
+		"main" : "./js/main.js",
+		"dependencies" : {
+			"jquery" : "~1.7.2"
+		}
+	},
+
+	"css" : {
+		"processor" : "less",
+		"input_dir" : "/less/",
+		"output_dir" : "/css/"
+	},
+
+	"html" : {
+		"processor" : "haml",
+		"input_dir" : "/haml/",
+		"output_dir" : "/"
+	},
+
+	"js" : {
+		"processor" : "coffeescript",
+		"input_dir" : "/coffee/",
+		"output_dir" : "/js/"
+	},
+
+	"server" : {
+		"directory" : "/",
+		"port" : "1337"
+	}
+}
